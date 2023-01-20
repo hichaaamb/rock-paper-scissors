@@ -2,6 +2,7 @@
 body {
   background-color: #ffbf00;
   font-family: "VT323", monospace;
+  overflow: hidden;
 }
 .title {
   font-family: "VT323", monospace;
@@ -57,4 +58,8 @@ body {
 .status,
 .description {
   text-align: center;
+}
+#player-emoji,
+#computer-emoji {
+  font-family: sans-serif !important;
 }

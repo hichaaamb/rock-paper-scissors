@@ -9,23 +9,27 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="title">ROCK PAPER SCISSORS</div>
-    <h1 class="status">Choose your weapon wisely!</h1>
-    <h1 class="description">First to score 5 points wins the game</h1>
+    <div id="title" class="title">ROCK PAPER SCISSORS</div>
+    <h1 id="status" class="status">Choose your weapon wisely!</h1>
+    <h1 id="description" class="description">
+      First to score 5 points wins the game
+    </h1>
     <div class="board">
       <div class="player">
-        <p class="player-emoji">?</p>
-        <p class="player-score">Player: 0</p>
+        <p id="player-emoji">?</p>
+        <p id="player-score">Player: <span id="player-score-value"></span></p>
       </div>
       <div class="computer">
-        <p class="computer-emoji">?</p>
-        <p class="computer-score">Computer: 0</p>
+        <p id="computer-emoji">?</p>
+        <p id="computer-score">
+          Computer: <span id="computer-score-value"></span>
+        </p>
       </div>
     </div>
     <div class="emojis">
-      <div class="rock-emoji">✊</div>
-      <div class="paper-emoji">✋</div>
-      <div class="scissors-emoji">✌️</div>
+      <div class="rock-emoji" onclick="rock();">✊</div>
+      <div class="paper-emoji" onclick="paper();">✋</div>
+      <div class="scissors-emoji" onclick="scissors();">✌️</div>
     </div>
   </body>
 </html>
